@@ -8,7 +8,11 @@ def count_words(sentence):
     Returns:
         the number of words in the sentence
     """
-    return 0
+    #this question's solution derives from the regex topic mentioned in class
+    #the findall function looks for a non white space strings  
+    import re
+    return len(re.findall(r'\S+', sentence))
+
 
 
 if __name__ == '__main__':

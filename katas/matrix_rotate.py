@@ -5,7 +5,20 @@ def rotate_matrix(matrix):
     Args:
         matrix: the 2D square matrix to rotate
     """
-    pass
+    m = len(matrix)
+    n = len(matrix[0])
+    new_matrix= [[0 for _ in range(m)] for _ in range(n)]
+    curr_col = n
+    for row in range(m):
+         curr_col = curr_col-1
+         for col in range (n):
+             new_matrix[col][curr_col] = matrix[row][col]
+
+    for i in range(m):
+        for j in range(n):
+            matrix[i][j] = new_matrix[i][j]
+
+
 
 
 def print_matrix(matrix):

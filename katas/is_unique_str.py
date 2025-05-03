@@ -8,7 +8,13 @@ def is_unique(string):
     Returns:
         True if all characters are unique, False otherwise
     """
+    check = []
+    for letter in string :
+        if letter in check : return False 
+        else :
+            check.append(letter)
     return True
+
 
 
 if __name__ == '__main__':

@@ -8,6 +8,9 @@ def longest_common_prefix(strs):
     Returns:
         the longest common prefix, or an empty string if none exists
     """
+  
+    
+
     return ""
 
 

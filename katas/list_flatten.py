@@ -9,7 +9,23 @@ def flatten_list(nested_list):
         a flat list containing all integers from the nested structure
     """
     # hint: isinstance()
-    return []
+
+    # i solved this one as in sum_of_digits question , same idea but using python trick str(list)
+    # Not perfect complexity!
+    wanted = []
+    list_as_str = str(nested_list)
+    for object in list_as_str :
+        if ord(object)>=48 and ord(object)<=57:wanted.append(ord(object)-48)
+    return wanted
+
+
+
+
+
+
+
+    
+    return 
 
 
 if __name__ == '__main__':
